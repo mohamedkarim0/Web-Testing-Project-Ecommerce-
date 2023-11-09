@@ -6,10 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class P01_register {
-    public WebElement registerLink()
-    {
-        return Hooks.d.findElement(By.className("ico-register"));
-    }
 
     public void selectGender(String gender)
     {

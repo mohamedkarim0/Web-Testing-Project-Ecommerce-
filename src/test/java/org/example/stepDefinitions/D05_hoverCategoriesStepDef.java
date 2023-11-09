@@ -7,8 +7,6 @@ import org.example.pages.P03_homePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
-
 import java.util.List;
 import java.util.Random;
 
@@ -28,7 +26,7 @@ public class D05_hoverCategoriesStepDef {
     public void userSelectsRandomProductCategory() {
         int count = homePage.productCategory().size();
 
-        int min = 0;
+
         //int max = count-1;   // you are selecting random value from 0 to 2 that's why  max = count-1
         int selectedUser =  random.nextInt(count)-2;
         System.out.println(selectedUser);
